@@ -1,9 +1,10 @@
 body{
     font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
+    margin: 0;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 30px 200px repeat(4, 100px);
+    grid-template-rows: 30px repeat(4, auto) 30px;
     grid-template-areas: 
     "nav"
     "header"
@@ -19,33 +20,78 @@ nav {
     grid-area: nav;
     position: sticky;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .navbar a {
     color: whitesmoke;
     transition: all .2s linear;
+    text-decoration: none;
 }
 
 .header {
     background-color: orange;
     grid-area: header;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
 }
 
-.header .header-img{
-    margin-top: 30px;
-}
+
 
 .header .presentation{
     max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 10%;
+}
+
+.contact a {
+    text-decoration: none;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all .2s linear;
 }
 
 .carousel {
-    background-color: green;
     grid-area: carousel;
+    margin: 10px;
+}
+
+
+.carousel-slides{
+    max-width: 100%;
+    max-height: 54vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+.carousel-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dots .dot{
+    display: block;
+    background-color: rgb(91, 91, 91);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 10px;
 }
 
 .skills {
@@ -55,7 +101,53 @@ nav {
 
 .form {
     background-color: yellow;
-    grid-area: form;
+    grid-area: form;    
+}
+
+.form-display{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-areas: 
+    "fname lname"
+    "email tel"
+    "know know"
+    "git git"
+    "description description"
+    "submit submit";
+}
+
+.form-fname {
+    grid-area: fname;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-lname {
+    grid-area: lname;
+}
+
+.form-email {
+    grid-area: email;
+}
+
+.form-tel {
+    grid-area: tel;
+}
+
+.form-know {
+    grid-area: know;
+}
+
+.form-git {
+    grid-area: git;
+}
+
+.form-description {
+    grid-area: decription;
+}
+
+.form-submit {
+    grid-area: submit;
 }
 
 footer {
@@ -63,10 +155,18 @@ footer {
     grid-area: footer;
 }
 
+
+
+/* SCREEN RESPONSIVE */
+
 @media screen and (min-width: 720px) {
     
     .navbar a:hover {
         color: green;
     }
-    
+
+    .contact a:hover {
+        background-color: green;
+        padding: 10px 50px;
+
 }

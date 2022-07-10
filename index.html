@@ -13,11 +13,18 @@
     <link rel="stylesheet" href="css\main.css".css">
 </head>
 <body>
+
+        <!-- ---------------- NAV BAR ---------------- -->
+
+
     <nav class="navbar">
         <a href="">Music</a>
         <a href="">OnYX Midi Instrument</a>
         <a href="">Hypnosis</a>
     </nav>
+
+    <!-- ---------------- HEADER ---------------- -->
+
 
     <header class="header">
         <figure class="header-img">
@@ -36,23 +43,157 @@
             </picture>
         </figure>
         <div class="presentation">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto facere quidem ducimus assumenda veniam ipsa libero maiores exercitationem natus dolorem aperiam est soluta quas ea quisquam, tenetur at quaerat suscipit.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto facere quidem ducimus assumenda.
+
+            <div class="contact">
+                <a href="mailto:joelsemperecobos@gmail.com">Contact</a>
+            </div>
         </div>
     </header>
 
+    <!-- ---------------- CAROUSEL ---------------- -->
+
     <section class="carousel">
-carousel
+        <div class="carousel-slides">
+            <figure class="carousel-img">
+                <div class="carousel-container" id="slide1"> <!-- FOTO1 -->
+                    <img src="media\3 piezas.jpg" alt="OnYX 3 piezas"> 
+                </div>
+            </figure>
+            <figure>
+                <div class="carousel-container" id="slide2">
+                    <img src="media\boca 2.jpg" alt="OnYX 3 piezas">
+                </div>
+            </figure>
+            <figure>
+                <div class="carousel-container" id="slide3">
+                    <img src="media\las dos manos.jpg" alt="OnYX 3 piezas">
+                </div>
+            </figure>
+        </div>
+        <div class="dots">
+            <a class="dot" href="#slide1"></a>
+            <a class="dot" href="#slide2"></a>
+            <a class="dot" href="#slide3"></a>
+            
+
+        </div>
     </section>
+
+    <!-- ---------------- SKILLS ---------------- -->
+
 
     <section class="skills">
 skills
     </section>
 
+    <!-- ---------------- FORM ---------------- -->
+
+
     <section class="form">
-        <form action="">
-    form
-        </form>
+        <form action="" method="post">
+            <div>
+                <label for="firstname">Nombre</label>
+                <input 
+                    type="text" 
+                    required 
+                    id="firstname" 
+                    name="firstname"
+                    >
+            </div>
+    
+            <div>
+                <label for="lastname">Apellidos</label>
+                <input 
+                    type="text" 
+                    required 
+                    id="lastname" 
+                    name="lastname"
+                    >
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input 
+                    type="text" 
+                    required 
+                    id="email" 
+                    name="email"
+                    pattern=".+@.+\..+"
+                    >
+            </div>
+    
+            <div>
+                <label for="tel">Teléfono</label>
+                <input 
+                    type="tel" 
+                    required 
+                    id="tel"   
+                    name="tel"
+                    pattern="\+?[0-9]+"
+                    >
+            </div>
+    
+            <fieldset aria-required="true">
+                <legend>¿Cómo me conociste?</legend>
+                    <label for="universidad">Universidad</label>
+                    <input 
+                        type="radio"  
+                        id="universidad"   
+                        name="know"
+                        >
+                    <label for="keepcoding">KeepCoding kick-off</label>
+                    <input 
+                        type="radio"  
+                        id="keepcoding"   
+                        name="know"
+                        >
+                    <label for="colegio">Colegio</label>
+                    <input 
+                        type="radio"  
+                        id="colegio"   
+                        name="know"
+                        >
+                    <label for="engithub">En Github</label>
+                    <input 
+                        type="radio"  
+                        id="engithub"   
+                        name="know"
+                        >
+    
+            </fieldset>
+    
+            <div>
+                <label for="github">Tag de Github</label>
+                <input 
+                    type="text"  
+                    id="github" 
+                    name="github"
+                    pattern="^@[^\s]+"
+                    title="@user-name"
+                    value="@"
+                    >
+            </div>
+            <div>
+                <textarea 
+                    name="description" 
+                    id="description" 
+                    cols="30" 
+                    rows="10" 
+                    maxlength="180" 
+                    required
+                    placeholder="Descripción"
+                >
+            </textarea>
+            </div>
+            
+            
+            <input type="submit" value="Guardar">
+        </form> 
     </section>
+
+    <!-- ---------------- FOOTER ---------------- -->
+
 
     <footer>
     
