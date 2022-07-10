@@ -63,6 +63,11 @@ nav {
     margin: 10px;
 }
 
+.carousel h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
 
 .carousel-slides{
     max-width: 100%;
@@ -95,15 +100,19 @@ nav {
 }
 
 .skills {
-    background-color: blueviolet;
+    background-color: rgb(209, 209, 209);
     grid-area: skills;
 }
 
 .form {
-    background-color: yellow;
+    margin-top: 20px;
     grid-area: form;    
 }
 
+.form-flex{
+    display: flex;
+    flex-direction: column;
+}
 .form-display{
     display:grid;
     grid-template-columns: repeat(2, 1fr) ;
@@ -140,26 +149,52 @@ nav {
 
 .form-git {
     grid-area: git;
+    max-width: 300px;
 }
 
 .form-description {
     grid-area: description;
+    max-width: 300px;
 }
 
 .form-submit {
     grid-area: submit;
+    max-width: 100px;
+
 }
 
 .form-input{
-    max-width: 90%;
+    max-width: 80%;
 }
 
-footer {
-    background-color: brown;
+.footer {
     grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
 }
 
+.footer-img {
+    max-width: 50px;
+}
 
+.footer-img a img{
+    max-width: 100%;
+}
+
+/* ANIMATIONS */
+
+@keyframes skills {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+        background-color: red;
+    }
+}
 
 /* SCREEN RESPONSIVE */
 
@@ -182,7 +217,6 @@ footer {
     "git git git git"
     "description description description description"
     "submit submit submit submit";
-
-
+    }
 
 }
