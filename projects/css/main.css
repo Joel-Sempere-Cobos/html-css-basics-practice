@@ -37,7 +37,7 @@ nav {
     background-color: rgb(222, 222, 222);
     padding: 10px;
     grid-column: 3 / 5;
-    grid-row: 2 / 5;
+    grid-row: 3 / 5;
 }
 
 .cuerpo .grid {
@@ -56,7 +56,7 @@ h2{
 }
 
 
-.cuerpo .gridD .search-form {
+.cuerpo .grid .search-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +74,6 @@ main >div >aside {
     width: 150px;
     border: 1px solid #96d1f8;
     background: #65a9d7;   
-    background: -webkit-linear-gradient(top, #143a28, #4ad192);
     padding: 5px 10px;
     border-radius: 8px;    
     color: white;
@@ -173,13 +172,12 @@ main >div >aside {
   /* Transition */
 .search-form input[type="submit"] {
     color: #fff;
-    background: -webkit-linear-gradient(top, #143a28, #4ad192);
+    background-color: #329fe8;
     border: 1px;
     border-radius: 20px;
-    font-size: large;
     width: 80px;
-    padding: 10px;
-    transition: all 1s linear;
+    padding: 8px 15px;
+    transition: background-color .2s linear;
     margin-bottom: 20px;
 }    
 
@@ -196,8 +194,6 @@ main >div >aside {
         background-color: green;
         padding: 10px 50px;
     }
-
-    
 
 
 }
