@@ -84,8 +84,29 @@
     <!-- ---------------- SKILLS ---------------- -->
 
 
-    <section class="skills">
-skills
+    <section class="skills-bg">
+        <h2>MY SKILLS</h2>
+        <div class="skills">
+            <div>
+            <label for="git">Git</label>
+            <div class="skill-git"></div>
+            </div>
+
+            <div>
+                <label for="html">HTML</label>
+                <div class="skill-html"></div>
+            </div>
+
+            <div>
+                <label for="css">CSS</label>
+                <div class="skill-css"></div>
+            </div>
+
+            <div>
+                <label for="js">JS</label>
+                <div class="skill-js"></div>
+            </div>
+        </div>
     </section>
 
     <!-- ---------------- FORM ---------------- -->
@@ -137,31 +158,38 @@ skills
     
             <fieldset class="form-know" aria-required="true">
                 <legend>¿Cómo me conociste?</legend>
-                    <label for="universidad">Universidad</label>
+                <div>
                     <input 
-                        type="radio"  
-                        id="universidad"   
+                        type="radio"
+                        id="universidad"
+                        name="know"
+                        required>
+                    <label for="universidad">Universidad</label>
+                </div>
+                <div>
+                    <input 
+                        type="radio"
+                        id="keepcoding"
                         name="know"
                         >
                     <label for="keepcoding">KeepCoding kick-off</label>
+                </div>
+                <div>
                     <input 
-                        type="radio"  
-                        id="keepcoding"   
+                        type="radio"
+                        id="colegio"
                         name="know"
                         >
                     <label for="colegio">Colegio</label>
+                </div>
+                <div>
                     <input 
-                        type="radio"  
-                        id="colegio"   
+                        type="radio"
+                        id="engithub"
                         name="know"
                         >
                     <label for="engithub">En Github</label>
-                    <input 
-                        type="radio"  
-                        id="engithub"   
-                        name="know"
-                        >
-    
+                </div>
             </fieldset>
     
             <div  class="form-git form-flex">
