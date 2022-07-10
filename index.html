@@ -91,10 +91,10 @@ skills
 
 
     <section class="form">
-        <form action="" method="post">
-            <div>
+        <form  class="form-display" action="" method="post">
+            <div class="form-fname">
                 <label for="firstname">Nombre</label>
-                <input 
+                <input class="form-input" 
                     type="text" 
                     required 
                     id="firstname" 
@@ -102,9 +102,9 @@ skills
                     >
             </div>
     
-            <div>
+            <div class="form-lname">
                 <label for="lastname">Apellidos</label>
-                <input 
+                <input class="form-input"
                     type="text" 
                     required 
                     id="lastname" 
@@ -112,9 +112,9 @@ skills
                     >
             </div>
 
-            <div>
+            <div class="form-email">
                 <label for="email">Email</label>
-                <input 
+                <input class="form-input"
                     type="text" 
                     required 
                     id="email" 
@@ -123,9 +123,9 @@ skills
                     >
             </div>
     
-            <div>
+            <div class="form-tel">
                 <label for="tel">Teléfono</label>
-                <input 
+                <input class="form-input"
                     type="tel" 
                     required 
                     id="tel"   
@@ -134,7 +134,7 @@ skills
                     >
             </div>
     
-            <fieldset aria-required="true">
+            <fieldset class="form-know" aria-required="true">
                 <legend>¿Cómo me conociste?</legend>
                     <label for="universidad">Universidad</label>
                     <input 
@@ -163,7 +163,7 @@ skills
     
             </fieldset>
     
-            <div>
+            <div  class="form-git">
                 <label for="github">Tag de Github</label>
                 <input 
                     type="text"  
@@ -174,7 +174,7 @@ skills
                     value="@"
                     >
             </div>
-            <div>
+            <div class="form-description">
                 <textarea 
                     name="description" 
                     id="description" 
@@ -188,7 +188,7 @@ skills
             </div>
             
             
-            <input type="submit" value="Guardar">
+            <input  class="form-submit" type="submit" value="Guardar">
         </form> 
     </section>
 
