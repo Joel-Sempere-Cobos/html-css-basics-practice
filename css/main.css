@@ -1,2 +1,60 @@
 body{
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30px repeat(5, 100px);
+    grid-template-areas: 
+    "nav"
+    "header"
+    "carousel"
+    "skills"
+    "form"
+    "footer";
+}
+
+
+nav {
+    background-color: blue;
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: whitesmoke;
+    transition: all .2s linear;
+}
+
+header {
+    background-color: orange;
+    grid-area: header;
+}
+
+.carousel {
+    background-color: green;
+    grid-area: carousel;
+}
+
+.skills {
+    background-color: blueviolet;
+    grid-area: skills;
+}
+
+.form {
+    background-color: yellow;
+    grid-area: form;
+}
+
+footer {
+    background-color: brown;
+    grid-area: footer;
+}
+
+@media screen and (min-width: 720px) {
+    
+    .navbar a:hover {
+        color: green;
+    }
+    
 }
